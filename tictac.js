@@ -4,3 +4,15 @@
 // Play one is a x and player two is a circle 
 
 let switchPlayer = 1;
+let boix1 =  document.querySelector('.box1')
+console.log('yo')
+document.querySelector('.box1').addEventListener('click', function(){
+if(switchPlayer == 1){
+boix1.insertAdjacentHTML("beforeend",'<div>X</div>')
+switchPlayer += 1;
+} else if(switchPlayer == 2){
+    boix1.insertAdjacentHTML("beforeend",'<div>O</div>') 
+    switchPlayer -= 1;
+}
+console.log(switchPlayer)
+})
